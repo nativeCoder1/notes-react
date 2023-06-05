@@ -60,8 +60,8 @@ const ForgotPassword = () => {
             <h3>Change password</h3>
             <form className="auth-form">
                 <input name="token" placeholder="Enter token sent to your mail" onChange={handleChange} value={password.token}/>
-                <input name="newPassword" placeholder= "New Password" onChange={handleChange} value={password.newPassword} required/>
-                <input name="confirmPassword" placeholder = "Confirm new password" onChange={handleChange} value={password.confirmPassword} required/>
+                <input name="newPassword" type ="password" placeholder= "New Password" onChange={handleChange} value={password.newPassword} required/>
+                <input name="confirmPassword" type ="password" placeholder = "Confirm new password" onChange={handleChange} value={password.confirmPassword} required/>
                 <button onClick={handleClick}>Change Password</button>
             </form>
             <p>Back to login? <Link className = "link" to="/login">Login</Link></p>
