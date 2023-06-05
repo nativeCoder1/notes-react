@@ -68,7 +68,6 @@ const Register = () => {
     <div>
         <h1><em>Notes...</em></h1>
         <div className="form-div">
-        {modal && <Modals notification={notification}/>}
         {error && <Modals notification={errorMessage}/>}
         <h2>Register</h2>
         <form className="auth-form" onSubmit={handleSubmit}>
