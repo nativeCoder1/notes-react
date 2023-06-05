@@ -13,7 +13,6 @@ const Register = () => {
     const [error, setError] = useState(false)
     const [errorMessage, setErrorMessage] = useState("")
     const [modal, showModal] = useState(false)
-    const [notification, setNotification] = useState("")
 
     const navigate = useNavigate()
     const handleChange = (event) => {
@@ -58,7 +57,7 @@ const Register = () => {
             postHandler(newUserData)
         }else{
             showModal(!modal)
-            setNotification("Password do not match!")
+            alert("Password do not match!")
             return
         }
 
