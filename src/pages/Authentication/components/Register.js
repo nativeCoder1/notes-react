@@ -70,6 +70,7 @@ const Register = () => {
         {error && <Modals notification={errorMessage}/>}
         <h2>Register</h2>
         <form className="auth-form" onSubmit={handleSubmit}>
+        <p>Password must contain a lower case, symbol, digit and must be at least 8 character long </p>
             <input name = "userName" type="text" placeholder="Username" value={userData.userName} onChange = {handleChange} required/>
             <input name = "email" type="email" placeholder="Email" value={userData.email}  onChange = {handleChange} required/>
             <input name = "password" type="password" placeholder="Password" value = {userData.password}   onChange = {handleChange} required/>
