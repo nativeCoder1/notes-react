@@ -49,6 +49,10 @@ const NoteTaker = (props) => {
             content: note.content
         }
         postHandler(newNote)
+        setNote({
+            title: "",
+            content: ""
+        })
     }
     return (
         <div>
