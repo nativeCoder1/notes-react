@@ -26,7 +26,7 @@ const Register = () => {
 
     const postHandler = async (value) => {
         try{
-        const response = await fetch("https://notes-production-9af1.up.railway.app/register", {
+        const response = await fetch("https://notes-production-670e.up.railway.app/register", {
             method: 'POST',
             body: JSON.stringify(value),
             headers: {

@@ -18,7 +18,7 @@ const Note = (props) => {
     }
 
     const deleteHandler = async (value) => {
-        const response = await fetch("https://notes-production-9af1.up.railway.app/delete_note", {
+        const response = await fetch("https://notes-production-670e.up.railway.app/delete_note", {
           method: 'DELETE',
           body: JSON.stringify(value),
           headers: {

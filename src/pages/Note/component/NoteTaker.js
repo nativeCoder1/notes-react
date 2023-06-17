@@ -23,7 +23,7 @@ const NoteTaker = (props) => {
 
     const postHandler = async (value) => {
         try{
-            const response = await fetch("https://notes-production-9af1.up.railway.app/create_note", {
+            const response = await fetch("https://notes-production-670e.up.railway.app/create_note", {
                 method: 'POST',
                 body: JSON.stringify(value),
                 headers: {

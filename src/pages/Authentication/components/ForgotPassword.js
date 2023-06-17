@@ -13,7 +13,7 @@ const ForgotPassword = () => {
 
     const postHandler = async (value) => {
         try{
-            const response = await fetch("https://notes-production-9af1.up.railway.app/forgot_password", {
+            const response = await fetch("https://notes-production-670e.up.railway.app/forgot_password", {
                 method: 'PUT',
                 body: JSON.stringify(value),
                 headers: {

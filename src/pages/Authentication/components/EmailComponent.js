@@ -9,7 +9,7 @@ const EmailComponent = (props) => {
         setEmail(newEmail)
     }
     const postHandler = async (value) => {
-        const response = await fetch("https://notes-production-9af1.up.railway.app/email", {
+        const response = await fetch("https://notes-production-670e.up.railway.app/email", {
                 method: 'POST',
                 body: JSON.stringify(value),
                 headers: {

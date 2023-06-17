@@ -11,7 +11,7 @@ const Header = (props) => {
     const navigate = useNavigate()
     const getHandler = async (item) => {
     
-            const response = await fetch(`https://notes-production-9af1.up.railway.app/notes/${props.userName}`);
+            const response = await fetch(`https://notes-production-670e.up.railway.app/notes/${props.userName}`);
             if (!response.ok) {
                 throw new Error("Something went wrong!")
             }
@@ -31,7 +31,7 @@ const Header = (props) => {
     }
 
     const searchHandler = async (value) => {
-            const response = await fetch("https://notes-production-9af1.up.railway.app/noteTitle", {
+            const response = await fetch("https://notes-production-670e.up.railway.app/noteTitle", {
                 method: 'POST',
                 body: JSON.stringify(value),
                 headers: {

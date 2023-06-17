@@ -13,7 +13,7 @@ const ViewNotes = (props) => {
     
     const refetch = async () => {
       try{
-      const response = await fetch(`https://notes-production-9af1.up.railway.app/notes/${userName}`);
+      const response = await fetch(`https://notes-production-670e.up.railway.app/notes/${userName}`);
       if (!response.ok){
         throw new Error("Something is wrong")
       }

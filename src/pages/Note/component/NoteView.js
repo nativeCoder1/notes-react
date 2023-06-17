@@ -12,7 +12,7 @@ const NoteView = () => {
     const [modal, showModal] = useState(false)
     
     const postHandler = async (value) => {
-        const response = await fetch("https://notes-production-9af1.up.railway.app/patch_note", {
+        const response = await fetch("https://notes-production-670e.up.railway.app/patch_note", {
                 method: 'PATCH',
                 body: JSON.stringify(value),
                 headers: {
